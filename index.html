@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <a href="https://tailwindcss.com/">
+            <img src="./assets/tailwind-logo.svg" alt="logo" width="250"
+          /></a>
+          <h1>Tailwind</h1>
+        </section>
+
+        <section>
+          <section>
+            <h3>It was an ordinary evening...</h3>
+            <img src="./assets/surf-1.gif" alt="surf-1" width="500" />
+          </section>
+          <section>
+            <img src="./assets/surf.png" alt="surf-2" width="500" />
+          </section>
+          <section>
+            <img src="./assets/marge-simpson.gif" alt="scream" width="500" />
+            <img
+              src="./assets/tailwind-bad-1.jpg"
+              alt="tailwind-bad-1"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: rotate(-30deg);
+              "
+              width="300"
+            />
+            <img
+              src="./assets/tailwind-bad-2.jpg"
+              alt="tailwind-bad-2"
+              style="
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: rotate(30deg);
+              "
+              width="300"
+            />
+            <img
+              src="./assets/tailwind-good-1.jpg"
+              alt="tailwind-bad-2"
+              style="
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transform: rotate(20deg);
+              "
+              width="300"
+            />
+            <img
+              src="./assets/tailwind-good-2.jpg"
+              alt="tailwind-bad-2"
+              style="
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                transform: rotate(-30deg);
+              "
+              width="300"
+            />
+          </section>
+        </section>
+
+        <section>
+          <section><h2>Tailwind is a CSS framework</h2></section>
+          <section>
+            <h3>The most popular CSS frameworks(2020)</h3>
+            <img
+              src="./assets/popular-css-framework-comparison-2020.png"
+              alt="stats"
+              width="700"
+            />
+          </section>
+          <section style="height: 100vh; width: 100vw">
+            <div
+              class="gachi-wrapper"
+              style="
+                position: absolute;
+                left: 5%;
+                top: 5%;
+                width: 390px;
+                height: 300px;
+              "
+            >
+              <img
+                src="./assets/gachi-fight.gif"
+                alt="gachi-fight"
+                style="width: 390px; height: 300px; object-fit: cover"
+              />
+              <img
+                src="./assets/vanillacsslogo.jpg"
+                alt="vanillacsslogo"
+                width="100"
+                style="
+                  position: absolute;
+                  top: 15%;
+                  right: 5%;
+                  z-index: 2;
+                  transform: rotate(30deg);
+                "
+              />
+              <img
+                src="./assets/Bootstrap-logo.png"
+                alt="Bootstrap-logo"
+                width="50"
+                style="
+                  position: absolute;
+                  top: 10%;
+                  left: 10%;
+                  z-index: 2;
+                  transform: rotate(-30deg);
+                "
+              />
+            </div>
+            <img
+              src="./assets/foundation-logo.svg"
+              alt="foundation-logo"
+              width="100"
+              style="position: absolute; top: 47%; left: 6%"
+            />
+            <img
+              src="./assets/bulma-logo.svg"
+              alt="bulma-logo"
+              width="100"
+              style="position: absolute; top: 43%; left: 25%"
+            />
+            <img
+              src="./assets/materialize-logo.svg"
+              alt="materialize-logo"
+              width="150"
+              style="position: absolute; top: 10%; left: 30%"
+            />
+            <img
+              src="./assets/uikit-logo.svg"
+              alt="uikit-logo"
+              width="100"
+              style="position: absolute; top: 25%; left: 37%"
+            />
+            <img
+              src="./assets/Popcorn.svg"
+              alt="Popcorn"
+              width="100"
+              style="position: absolute; top: 45%; left: 47%"
+            />
+            <img
+              src="./assets/speech.png"
+              alt="speech"
+              width="200"
+              style="position: absolute; top: 35%; left: 9%"
+            />
+          </section>
+        </section>
+        <section class="about-bootstrap">
+          <section><h3>So what's about bootstrap?</h3></section>
+          <section>
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+              "
+            >
+              <img
+                src="./assets/Bootstrap-logo.png"
+                alt="Bootstrap-logo"
+                width="350"
+              />
+              <p style="font-size: 30px">
+                Bootstrap is an open source CSS framework created at Twitter in
+                mid 10th and was originally named “Twitter Blueprint” and was
+                used as internal tool in the company, but the devs saw much more
+                potential in it and started to develop the project further. So
+                after a few month they presented it as an open source project
+                called Bootstrap on August 19, 2011 and the project quickly
+                became popular
+              </p>
+            </div>
+          </section>
+          <section>
+            <h4>Bootstrap key features</h4>
+            <ul
+              style="
+                position: relative;
+                display: grid;
+                grid-template-columns: auto auto;
+                column-gap: 10%;
+                list-style: none;
+                left: -20%;
+              "
+            >
+              <li
+                class="fragment"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                "
+              >
+                <p style="font-size: 30px; text-align: center">
+                  Own 12 column grid system
+                </p>
+                <img
+                  src="./assets/bootstrap-grid.png"
+                  alt="Bootstrap-grid"
+                  width="500"
+                />
+                <pre data-id="code-animation">
+                  <code class="hljs javascript" data-trim style="font-size: 16px;">
+                    <div class =”row”>
+                      <h2 class=”col-md-6”>Hello</h2>
+                    <h2 class=”col-md-6”>World</h2>
+                    </div>                    
+                  </code>
+                </pre>
+                <img
+                  src="./assets/bootstrap-grid-ex.png"
+                  alt="bootstrap-grid-ex"
+                />
+              </li>
+              <li
+                class="fragment"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                "
+              >
+                <p style="font-size: 30px">Huge library of components</p>
+                <pre data-id="code-animation" style="font-size: 16px">
+                  <code class="hljs javascript" data-trim style="font-size: 20px;">
+                    <button class="btn btn-primary">Primary</button>
+                    <img src="./assets/bootstrap-component-ex.jpg">                  
+                  </code>
+                </pre>
+                <img
+                  src="./assets/bootstrap-component-ex.jpg"
+                  alt="bootstrap-component-ex"
+                />
+                <div style="display: flex; column-gap: 10px">
+                  <pre
+                    data-id="code-animation"
+                    style="width: 70%; font-size: 16px"
+                  >
+                    <code class="hljs javascript" data-trim style="font-size: 20px;">
+                      <div class="card" style="width: 18rem">
+                        <img
+                          class="card-img-top"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                          </p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>             
+                    </code>
+                  </pre>
+
+                  <img
+                    src="./assets/bootstrap-component-ex-2.jpg"
+                    alt="bootstrap-component-ex-2"
+                  />
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>Pros and cons</h4>
+            <ul
+              style="
+                position: relative;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 10%;
+                list-style: none;
+                font-size: 14px;
+              "
+            >
+              <li>
+                <ul style="margin: 0">
+                  <li class="fragment">
+                    Easy to learn
+                    <img
+                      src="./assets/smart-guy.webp"
+                      style="object-fit: cover"
+                      width="350"
+                      height="150"
+                      alt=""
+                    />
+                  </li>
+                  <li class="fragment">
+                    Quick responsive layouts
+                    <img
+                      src="./assets/fast.jpg"
+                      alt=""
+                      width="300"
+                      height="150"
+                    />
+                  </li>
+                  <li class="fragment">
+                    Lots of components and templates
+                    <img
+                      src="./assets/bootstrap-components.jpg"
+                      alt=""
+                      width="300"
+                      height="150"
+                    />
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <ul style="margin: 0">
+                  <li class="fragment">
+                    Bootstrap pages look the same
+                    <img src="./assets/bootstrap-same.png" alt="" width="400" />
+                  </li>
+                  <li class="fragment">
+                    Components and bootstrap grids are not always easy to
+                    customize
+                    <img
+                      src="./assets/bootstrap-important.jpg"
+                      alt="bootstrap-important"
+                    />
+                  </li>
+                  <li class="fragment">
+                    Uses jQuery under the hood (before Bootstrap 5)
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                      "
+                    >
+                      <img src="./assets/jquery.png" alt="" width="100" />
+                      <span style="font-size: 80px">=</span>
+                      <img src="./assets/poop.png" alt="" width="100" />
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <a href="https://getbootstrap.com/" style="font-size: 40px"
+              >Learn more about Bootstrap</a
+            >
+          </section>
+        </section>
+        <section>
+          <section>
+            <a href="https://tailwindcss.com/">
+              <img src="./assets/tailwind-logo.svg" alt="logo" width="250" />
+              <h2 style="margin-top: -5%">TAILWIND (FINALLY)</h2></a
+            >
+          </section>
+          <section>
+            <h4>Tailwind is blowing up</h4>
+            <img
+              src="./assets/FoundationCSS-BootstrapCSS-TailwindCSS-scaled.webp"
+              alt=""
+            />
+          </section>
+          <section style="position: relative">
+            <h4>Tailwind VS Bootstrap</h4>
+            <div
+              style="
+                display: flex;
+                column-gap: 20px;
+                justify-content: space-between;
+              "
+            >
+              <img
+                src="./assets/components.png"
+                alt=""
+                width="300"
+                class="fragment"
+              />
+              <img src="./assets/nothing.jfif" alt="" class="fragment" />
+            </div>
+            <div
+              style="
+                display: flex;
+                column-gap: 20px;
+                justify-content: space-between;
+              "
+            >
+              <img
+                src="./assets/bootstrap-grid.png"
+                alt=""
+                width="300"
+                class="fragment"
+              />
+              <img src="./assets/nothing.jfif" alt="" class="fragment" />
+            </div>
+            <img
+              width="200"
+              height="200"
+              class="fragment"
+              src="./assets/wtf.jpg"
+              alt=""
+              style="
+                position: absolute;
+                top: calc(50% - 100px);
+                left: calc(50% - 100px);
+              "
+            />
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>So what's the point?</h2>
+          </section>
+          <section style="display: flex; justify-content: space-between">
+            <h4>the point</h4>
+            <pre data-id="code-animation" class="fragment" style="width: 520px">
+              <code class="hljs javascript" data-trim style="font-size: 16px;">
+                function App() {
+                  return (
+                    <div className="text-red-500 text-9xl text-center">
+                      Hello, world!
+                    </div>
+                  );
+                }               
+              </code>
+            </pre>
+            <img
+              class="fragment"
+              width="520"
+              src="./assets/tailwind-ex-1.jpg"
+              alt=""
+            />
+          </section>
+          <section style="position: relative">
+            <h2>WTF???</h2>
+            <pre data-id="code-animation">
+              <code class="hljs javascript" data-trim style="font-size: 16px;">
+                <div className="container flex mx-auto max-w-screen-md items-center h-screen
+                mb-4 text-xs text-red-primary text-sm text-gray-base w-full mr-3 py-5 px-4 h-2 border
+                border-gray-primary rounded mb-2 flex w-3/5 text-sm text-gray-base w-full mr-3 py-5 px-4 h-2 
+                border border-gray-primary rounded mb-2 bg-blue-medium text-white w-full rounded h-8 
+                font-bold">
+                </div>                    
+              </code>
+            </pre>
+            <img
+              width="200"
+              height="200"
+              class="fragment"
+              src="./assets/wtf.jpg"
+              alt=""
+              style="position: absolute; top: calc(0); left: calc(5%)"
+            />
+            <img
+              width="200"
+              height="200"
+              class="fragment"
+              src="./assets/wtf.jpg"
+              alt=""
+              style="position: absolute; top: calc(0); left: calc(50% - 150px)"
+            />
+            <img
+              width="200"
+              height="200"
+              class="fragment"
+              src="./assets/wtf.jpg"
+              alt=""
+              style="position: absolute; top: calc(0); right: calc(15%)"
+            />
+          </section>
+          <section>
+            <h4>Tailwind intellisense</h4>
+            <img src="./assets/tailwind-ex-2.jpg" alt="" />
+            <img src="./assets/tailwind-ex-3.jpg" alt="" />
+          </section>
+          <section>
+            <h4>@apply directive</h4>
+            <img src="./assets/tailwind-ex-4.jpg" alt="" />
+            <img src="./assets/tailwind-ex-5.jpg" alt="" />
+          </section>
+          <section>
+            <h4>What about colors?</h4>
+            <img src="./assets/tailwind-ex-6.jpg" alt="" />
+            <img src="./assets/tailwind-ex-7.jpg" alt="" />
+            <img src="./assets/tailwind-ex-8.jpg" alt="" />
+          </section>
+          <section>
+            <h4>What about overwriting?</h4>
+            <img
+              width="300"
+              src="./assets/not-important.jfif"
+              alt=""
+              class="fragment"
+            />
+            <img src="./assets/purge.jpg" alt="" class="fragment" />
+          </section>
+          <section>
+            <h4>What about complex UI?</h4>
+            <img
+              width="700"
+              src="./assets/tailwind-ex-9.jpg"
+              alt=""
+              class="fragment"
+            />
+            <img src="./assets/tailwind-ex-10.jpg" alt="" class="fragment" />
+          </section>
+          <section>
+            <h4>A perfect match with frameworks</h4>
+            <div
+              style="display: flex; justify-content: center; column-gap: 20px"
+            >
+              <img width="400" src="./assets/vscode-mult.png" alt="" />
+              <img width="400" src="./assets/react.png" alt="" />
+            </div>
+          </section>
+        </section>
+        <section>
+          <h2>in conclusion</h2>
+          <div
+            style="
+              position: absolute;
+              top: -180%;
+              left: -60%;
+              height: 100vh;
+              width: 100vw;
+              scale: 0.6;
+            "
+          >
+            <div
+              class="gachi-wrapper"
+              style="
+                position: absolute;
+                left: 5%;
+                top: 5%;
+                width: 390px;
+                height: 300px;
+              "
+            >
+              <img
+                src="./assets/gachi-fight.gif"
+                alt="gachi-fight"
+                style="width: 390px; height: 300px; object-fit: cover"
+              />
+              <img
+                src="./assets/vanillacsslogo.jpg"
+                alt="vanillacsslogo"
+                width="100"
+                style="
+                  position: absolute;
+                  top: 15%;
+                  right: 5%;
+                  z-index: 2;
+                  transform: rotate(30deg);
+                "
+              />
+              <img
+                src="./assets/Bootstrap-logo.png"
+                alt="Bootstrap-logo"
+                width="50"
+                style="
+                  position: absolute;
+                  top: 10%;
+                  left: 10%;
+                  z-index: 2;
+                  transform: rotate(-30deg);
+                "
+              />
+            </div>
+            <img
+              src="./assets/foundation-logo.svg"
+              alt="foundation-logo"
+              width="100"
+              style="position: absolute; top: 47%; left: 6%"
+            />
+            <img
+              src="./assets/bulma-logo.svg"
+              alt="bulma-logo"
+              width="100"
+              style="position: absolute; top: 43%; left: 25%"
+            />
+            <img
+              src="./assets/materialize-logo.svg"
+              alt="materialize-logo"
+              width="150"
+              style="position: absolute; top: 10%; left: 30%"
+            />
+            <img
+              src="./assets/uikit-logo.svg"
+              alt="uikit-logo"
+              width="100"
+              style="position: absolute; top: 25%; left: 37%"
+            />
+            <img
+              src="./assets/Popcorn.svg"
+              alt="Popcorn"
+              width="100"
+              style="position: absolute; top: 45%; left: 35%"
+            />
+            <img
+              src="./assets/speech.png"
+              alt="speech"
+              width="200"
+              style="position: absolute; top: 35%; left: 9%"
+            />
+          </div>
+          <img
+            src="./assets/tailwind-logo.svg"
+            alt=""
+            style="position: absolute; top: 400%; right: 15%; scale: 2"
+          />
+          <img
+            src="./assets/react-logo.svg"
+            alt=""
+            style="position: absolute; top: 200%; right: 15%; scale: 1.7"
+          />
+          <img
+            src="./assets/angular-logo.svg"
+            alt=""
+            style="position: absolute; top: 500%; right: -1%; scale: 1.7"
+          />
+          <img
+            src="./assets/vue-logo.svg"
+            alt=""
+            style="position: absolute; top: 500%; right: 35%; scale: 1.4"
+          />
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
